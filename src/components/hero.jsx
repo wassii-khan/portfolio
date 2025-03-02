@@ -6,6 +6,8 @@ import TypingAnimator from "react-typing-animator";
 import { useDarkMode } from "../hook";
 import { imageVariants, staggerVariants, textVariants } from "./styles";
 
+import heroImage from "../assets/hero-1.jpg";
+
 const Hero = () => {
   const { isDarkMode } = useDarkMode(); // Access dark mode state
 
@@ -115,7 +117,7 @@ const Hero = () => {
           >
             <div className="w-full rounded-[3rem] shadow-2xl overflow-hidden bg-gradient-to-br from-redish/5 dark:from-redish/10 to-white dark:to-gray-800 border-8 border-white dark:border-gray-800">
               <img
-                src="src/assets/hero-1.jpg"
+                src={heroImage}
                 alt="Waseem Khan - Full Stack Developer"
                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500 ease-out"
               />
