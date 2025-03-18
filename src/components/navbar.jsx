@@ -4,9 +4,8 @@ import { useState } from "react";
 import { SunOutlined, MoonOutlined } from "@ant-design/icons";
 import { useDarkMode, useScroll } from "../hook";
 
-// logo
-export const logo =
-  "https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500";
+// Logo
+export const logo = "./cv.png";
 
 const Navbar = () => {
   const { scrollToSection, ...refs } = useScroll();
