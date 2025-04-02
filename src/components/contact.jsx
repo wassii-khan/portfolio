@@ -80,7 +80,7 @@ const Contact = () => {
                     </p>
                     <p>
                       <span className="font-semibold">Email:</span>{" "}
-                      wassiikhan@gmail.com
+                      wassiikhan933@gmail.com
                     </p>
                   </div>
                 </div>
