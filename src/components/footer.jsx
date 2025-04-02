@@ -11,6 +11,21 @@ import {
 const Footer = () => {
   const { isDarkMode } = useDarkMode();
 
+  const socialLinks = [
+    {
+      icon: GithubOutlined,
+      link: "https://github.com/wassii-khan",
+    },
+    {
+      icon: LinkedinOutlined,
+      link: "https://www.linkedin.com/in/waseem-khan-5a9393214/",
+    },
+    {
+      icon: MailOutlined,
+      link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
+    },
+  ];
+
   return (
     <footer
       className={`w-full py-12 mt-24 ${
@@ -89,22 +104,22 @@ const Footer = () => {
           </motion.span>
 
           <motion.div variants={itemVariants} className="flex gap-6">
-            {[GithubOutlined, LinkedinOutlined, MailOutlined].map(
-              (Icon, index) => (
-                <motion.a
-                  key={index}
-                  href="#"
-                  className={`p-2 rounded-lg transition-all ${
-                    isDarkMode
-                      ? "text-gray-400 hover:text-white hover:bg-gray-700"
-                      : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                  }`}
-                  whileHover={{ y: -2 }}
-                >
-                  <Icon className="text-2xl" />
-                </motion.a>
-              )
-            )}
+            {socialLinks.map((item, index) => (
+              <motion.a
+                key={index}
+                href={`${item.link}`}
+                target={`${item.link}`}
+                rel="noopener noreferrer"
+                className={`p-2 rounded-lg transition-all ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-white hover:bg-gray-700"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                }`}
+                whileHover={{ y: -2 }}
+              >
+                <item.icon className="text-2xl" />
+              </motion.a>
+            ))}
           </motion.div>
 
           <motion.span
