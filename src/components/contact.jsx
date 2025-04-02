@@ -19,7 +19,7 @@ const Contact = () => {
             Get in Touch
           </span>
           <h2 className="mt-3 text-4xl font-bold text-gray-900 dark:text-white font-poppins">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
         </div>
 
@@ -70,16 +70,17 @@ const Contact = () => {
                   }`}
                 >
                   <p>
-                    Available for new projects. Let's create something amazing!
+                    Available for new projects. Let&apos;s create something
+                    amazing!
                   </p>
                   <div className="space-y-2">
                     <p>
-                      <span className="font-semibold">Phone:</span> +1 234 567
-                      890
+                      <span className="font-semibold">Phone:</span> +92 336
+                      3701019
                     </p>
                     <p>
                       <span className="font-semibold">Email:</span>{" "}
-                      hello@example.com
+                      wassiikhan@gmail.com
                     </p>
                   </div>
                 </div>
