@@ -26,6 +26,25 @@ const Footer = () => {
     },
   ];
 
+  const navItems = [
+    {
+      name: "Home",
+      link: "#home",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Skills",
+      link: "#skills",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
+
   return (
     <footer
       className={`w-full py-12 mt-24 ${
@@ -60,15 +79,15 @@ const Footer = () => {
             className="flex flex-wrap gap-6 md:gap-10"
             variants={containerVariants}
           >
-            {["Home", "Projects", "Skills", "Contact"].map((item, index) => (
+            {navItems.map((item, index = 1) => (
               <motion.li key={index} variants={itemVariants}>
                 <a
-                  href="#"
+                  href={`${item.link}`}
                   className={`text-lg font-medium hover:text-redish transition-colors ${
                     isDarkMode ? "text-gray-400" : "text-gray-600"
                   }`}
                 >
-                  {item}
+                  {item.name}
                 </a>
               </motion.li>
             ))}
